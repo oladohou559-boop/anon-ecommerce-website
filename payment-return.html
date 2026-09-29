@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f5ec">
+  <meta name="robots" content="noindex,nofollow">
+  <title>État de votre paiement — Maison des Moissons</title>
+  <meta name="description" content="Vérifiez l’état de votre paiement auprès de Stripe.">
+  <link rel="icon" href="assets/images/logo/moissons.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/payment-return.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <div class="header-inner wrap">
+      <a class="brand" href="index.html" aria-label="Maison des Moissons, accueil">
+        <img src="assets/images/logo/moissons.svg" alt="" width="42" height="42">
+        <span class="brand-name">maison des <strong>moissons</strong><small>LE GOÛT D’ÊTRE ENSEMBLE</small></span>
+      </a>
+    </div>
+  </header>
+  <main class="payment-return wrap" id="contenu">
+    <p class="eyebrow">MAISON DES MOISSONS · PAIEMENT</p>
+    <h1 data-payment-title>Vérification de votre paiement…</h1>
+    <p data-payment-message role="status" aria-live="polite">Nous vérifions directement auprès de Stripe. Ne fermez pas cette page.</p>
+    <p class="payment-return-total" data-payment-total hidden></p>
+    <a class="button button-primary" href="index.html">Retour à la boutique</a>
+  </main>
+</body>
+</html>

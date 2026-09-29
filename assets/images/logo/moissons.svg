@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="title">
+  <title id="title">Emblème des Moissons</title>
+  <circle cx="24" cy="24" r="23" fill="#f0e4ca"/>
+  <path d="M24 11c-1 7-1 16 0 26" fill="none" stroke="#73816a" stroke-linecap="round" stroke-width="2"/>
+  <path d="M23 18c-7-7-12-3-9 2 2 3 6 4 9 3m3-2c7-7 12-3 9 2-2 3-6 4-9 3m-3 4c-6-6-10-2-7 2 2 2 5 3 7 2m3-2c6-6 10-2 7 2-2 2-5 3-7 2" fill="#bd562f" stroke="#943d22" stroke-linejoin="round" stroke-width="1.2"/>
+  <path d="M21 38h6" stroke="#593a29" stroke-linecap="round" stroke-width="1.5"/>
+</svg>
