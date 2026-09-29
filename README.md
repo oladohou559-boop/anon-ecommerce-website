@@ -1,44 +1,13 @@
-# Anon - An eCommerce Website
+# Gratitude & Cie
 
-![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/anon-ecommerce-website)
-![GitHub stars](https://img.shields.io/github/stars/codewithsadee/anon-ecommerce-website?style=social)
-![GitHub forks](https://img.shields.io/github/forks/codewithsadee/anon-ecommerce-website?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-[![YouTube Video Views](https://img.shields.io/youtube/views/3l8Lob4ysI0?style=social)](https://youtu.be/3l8Lob4ysI0)
+Une boutique de démonstration statique pour Thanksgiving, construite en HTML, CSS et JavaScript natifs.
 
-Anon is a fully responsive ecommerce website, maximum compatiblities in all mobile devices, built using HTML, CSS, and JavaScript.
+## Lancer le site
 
-## Demo
+Ouvrez `index.html` dans un navigateur ou déposez le contenu du dépôt sur un hébergeur de sites statiques. Aucun build, serveur applicatif ou dépendance à installer.
 
-![Anon Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![Anon Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
+Le panier est une démonstration locale enregistrée dans `localStorage`. Le bouton de commande ne crée pas de commande et ne traite aucun paiement.
 
-## Prerequisites
+## Images
 
-Before you begin, ensure you have met the following requirements:
-
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
-
-## Installing Anon
-
-To install **Anon**, follow these steps:
-
-Linux and macOS:
-
-```bash
-sudo git clone https://github.com/codewithsadee/anon-ecommerce-website.git
-```
-
-Windows:
-
-```bash
-git clone https://github.com/codewithsadee/anon-ecommerce-website.git
-```
-
-## Contact
-
-If you want to contact me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
-
-## License
-
-This project is **free to use** and does not contains any license.
+Les photos locales et leurs crédits sont dans `images/`. Consultez `images/LISEZ-MOI.txt` pour les dimensions recommandées et la liste des images attendues. Si une photo produit manque, la carte affiche son emoji de secours.

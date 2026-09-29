@@ -1,0 +1,23 @@
+Gratitude & Cie — images de la boutique
+
+Les photos du site sont chargées localement depuis ce dossier. Aucune image produit ne doit être remplacée par une URL distante.
+
+Photos attendues (hero + 13 produits) :
+- hero.jpg
+- dinde.jpg
+- centre-table.jpg
+- assiettes.jpg
+- nappe.jpg
+- bougies.jpg
+- couronne.jpg
+- gratin.jpg
+- thermometre.jpg
+- planche.jpg
+- tarte.jpg
+- panier.jpg
+- tablier.jpg
+- sirop.jpg
+
+Pour ajouter une photo, choisir un fichier dont l'usage commercial est autorisé et vérifier sa page source et son auteur. Unsplash ou Pexels sont conseillés (Pixabay en dernier recours). Garder les fichiers produits proches de 800 x 800 px et le hero proche de 1200 x 1500 px ; chaque fichier doit rester sous 250 Ko.
+
+Les images produit absentes sont volontairement laissées sans fichier : le site affiche alors l'emoji de secours prévu pour le produit.
