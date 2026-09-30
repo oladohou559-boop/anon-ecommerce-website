@@ -134,6 +134,7 @@ h1 em, h2 em { color: var(--gold); font-style: normal; }
 .product-card:nth-child(4n + 3) .product-visual { background: #F0D8CA; }
 .product-card:nth-child(4n) .product-visual { background: #E5DCC1; }
 .product-visual img { width: 100%; height: 100%; object-fit: cover; transition: transform .45s cubic-bezier(.2,.7,.2,1); }
+.product-visual img.product-image--contained { object-fit: contain; }
 .product-card:hover .product-visual img { transform: scale(1.045); }
 .product-emoji { position: absolute; inset: 0; display: grid; place-items: center; font-size: clamp(54px, 8vw, 88px); opacity: 0; transition: transform .3s ease; }
 .product-visual.is-fallback .product-emoji { opacity: 1; }
@@ -152,17 +153,10 @@ h1 em, h2 em { color: var(--gold); font-style: normal; }
 .host-gift { position: relative; overflow: hidden; color: var(--paper); background: radial-gradient(ellipse at 10% 85%, rgba(184,32,58,.45), transparent 43%), linear-gradient(119deg, #10261C, #1D4933 76%); }
 .host-gift::after { position: absolute; top: -180px; right: -110px; width: 470px; height: 470px; border: 1px solid rgba(231,239,232,.13); border-radius: 50%; content: ""; }
 .host-inner { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(280px,.82fr) minmax(0,1fr); align-items: center; gap: clamp(40px,10vw,140px); }
-.host-art { position: relative; display: grid; width: min(100%, 440px); aspect-ratio: 1; place-items: center; justify-self: center; border: 1px solid rgba(231,239,232,.19); border-radius: 50%; background: radial-gradient(circle at 45% 42%, rgba(238,139,43,.27), rgba(238,139,43,.05) 57%, transparent 58%); }
-.host-art::before, .host-art::after { position: absolute; inset: 9%; border: 1px dashed rgba(231,239,232,.23); border-radius: 50%; content: ""; }
-.host-art::after { inset: 19%; border-style: solid; opacity: .35; }
-.host-art-circle { position: relative; z-index: 1; display: flex; align-items: end; justify-content: center; gap: 7px; width: 70%; height: 65%; padding-bottom: 16%; }
-.host-art-circle span { display: grid; width: 31%; height: 45%; place-items: center; border-radius: 48% 48% 11% 11%; background: rgba(255,253,248,.12); font-size: clamp(32px,5vw,58px); }
-.host-art-circle span:nth-child(2) { height: 62%; background: rgba(238,139,43,.24); }
-.host-art-circle span:nth-child(3) { height: 52%; background: rgba(184,32,58,.25); }
-.host-art-spark { position: absolute; color: var(--gold); font-size: 24px; }
-.host-spark-one { top: 19%; left: 14%; }
-.host-spark-two { right: 12%; bottom: 22%; font-size: 18px; }
-.host-art-label { position: absolute; right: -5%; bottom: 12%; display: grid; width: 91px; height: 91px; place-content: center; border-radius: 50%; color: var(--forest-deep); background: var(--gold); font-family: var(--font-display); font-size: 14px; font-weight: 800; line-height: 1.05; text-align: center; transform: rotate(10deg); }
+.host-art { position: relative; width: min(100%, 440px); aspect-ratio: .78; justify-self: center; overflow: hidden; border: 1px solid rgba(231,239,232,.35); background: #7B512D; box-shadow: 0 24px 60px rgba(8,20,13,.28); }
+.host-art::after { position: absolute; inset: 45% 0 0; background: linear-gradient(transparent, rgba(16,38,28,.28)); content: ""; pointer-events: none; }
+.host-art-image { width: 100%; height: 100%; object-fit: cover; object-position: center 52%; }
+.host-art-label { position: absolute; z-index: 1; right: -3%; bottom: 7%; display: grid; width: 91px; height: 91px; place-content: center; border-radius: 50%; color: var(--forest-deep); background: var(--gold); font-family: var(--font-display); font-size: 14px; font-weight: 800; line-height: 1.05; text-align: center; transform: rotate(10deg); }
 .host-copy { max-width: 560px; }
 .host-copy h2 { margin-bottom: 20px; font-size: clamp(45px, 5.3vw, 68px); letter-spacing: -.075em; line-height: .98; }
 .host-copy > p:not(.eyebrow) { max-width: 490px; margin-bottom: 25px; color: #D5E0D7; font-size: 13px; line-height: 1.75; }

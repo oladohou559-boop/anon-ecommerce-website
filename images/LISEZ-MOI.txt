@@ -18,6 +18,9 @@ Photos attendues (hero + 13 produits) :
 - tablier.jpg
 - sirop.jpg
 
+Photo supplémentaire de la section coffret de l'hôte :
+- coffret-hote.jpg
+
 Pour ajouter une photo, choisir un fichier dont l'usage commercial est autorisé et vérifier sa page source et son auteur. Unsplash ou Pexels sont conseillés (Pixabay en dernier recours). Garder les fichiers produits proches de 800 x 800 px et le hero proche de 1200 x 1500 px ; chaque fichier doit rester sous 250 Ko.
 
-Les images produit absentes sont volontairement laissées sans fichier : le site affiche alors l'emoji de secours prévu pour le produit.
+Les images produit absentes sont volontairement laissées sans fichier : le site affiche alors l'emoji de secours prévu pour le produit. Les quatorze fichiers du catalogue sont actuellement présents. La photo supplémentaire de la section coffret et plusieurs photos produit ont été fournies par l'utilisateur ; leurs auteurs, sources et licences commerciales ne sont pas documentés. Voir CREDITS.txt avant toute publication commerciale.

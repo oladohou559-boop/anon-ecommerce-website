@@ -1,17 +1,17 @@
 const PRODUITS = [
-  { id: 1, nom: "Dinde fermière prête à cuire", catégorie: "Repas", prix: 89, "ancien prix": 109, badge: "Best-seller", img: "dinde.jpg", imgDisponible: false, emoji: "🦃" },
+  { id: 1, nom: "Dinde fermière prête à cuire", catégorie: "Repas", prix: 89, "ancien prix": 109, badge: "Best-seller", img: "dinde.jpg", imgDisponible: true, emoji: "🦃" },
   { id: 2, nom: "Centre de table d'automne", catégorie: "Déco", prix: 34, img: "centre-table.jpg", imgDisponible: true, emoji: "🍂" },
-  { id: 3, nom: "Set de 6 assiettes en grès", catégorie: "Table", prix: 59, "ancien prix": 74, badge: "-20 %", img: "assiettes.jpg", imgDisponible: false, emoji: "🍽️" },
-  { id: 4, nom: "Nappe en lin brodée", catégorie: "Table", prix: 45, img: "nappe.jpg", imgDisponible: false, emoji: "🧵" },
-  { id: 5, nom: "Trio de bougies cannelle-pomme", catégorie: "Déco", prix: 28, img: "bougies.jpg", imgDisponible: false, emoji: "🕯️" },
-  { id: 6, nom: "Couronne de feuilles d'érable", catégorie: "Déco", prix: 39, badge: "Nouveau", img: "couronne.jpg", imgDisponible: false, emoji: "🍁" },
-  { id: 7, nom: "Plat à gratin en fonte", catégorie: "Cuisine", prix: 64, img: "gratin.jpg", imgDisponible: false, emoji: "🥘" },
-  { id: 8, nom: "Thermomètre à rôtir digital", catégorie: "Cuisine", prix: 24, badge: "Stock limité", img: "thermometre.jpg", imgDisponible: false, emoji: "🌡️" },
-  { id: 9, nom: "Planche à découper en noyer", catégorie: "Cuisine", prix: 42, img: "planche.jpg", imgDisponible: false, emoji: "🪵" },
+  { id: 3, nom: "Set de 6 assiettes en grès", catégorie: "Table", prix: 59, "ancien prix": 74, badge: "-20 %", img: "assiettes.jpg", imgDisponible: true, emoji: "🍽️" },
+  { id: 4, nom: "Nappe en lin brodée", catégorie: "Table", prix: 45, img: "nappe.jpg", imgDisponible: true, emoji: "🧵" },
+  { id: 5, nom: "Trio de bougies cannelle-pomme", catégorie: "Déco", prix: 28, img: "bougies.jpg", imgDisponible: true, emoji: "🕯️" },
+  { id: 6, nom: "Couronne de feuilles d'érable", catégorie: "Déco", prix: 39, badge: "Nouveau", img: "couronne.jpg", imgDisponible: true, emoji: "🍁" },
+  { id: 7, nom: "Plat à gratin en fonte", catégorie: "Cuisine", prix: 64, img: "gratin.jpg", imgDisponible: true, emoji: "🥘" },
+  { id: 8, nom: "Thermomètre à rôtir digital", catégorie: "Cuisine", prix: 24, badge: "Stock limité", img: "thermometre.jpg", imgDisponible: true, emoji: "🌡️" },
+  { id: 9, nom: "Planche à découper en noyer", catégorie: "Cuisine", prix: 42, img: "planche.jpg", imgDisponible: true, emoji: "🪵" },
   { id: 10, nom: "Coffret tarte à la citrouille", catégorie: "Repas", prix: 32, img: "tarte.jpg", imgDisponible: true, emoji: "🥧" },
-  { id: 11, nom: "Panier gourmand de l'hôte", catégorie: "Cadeaux", prix: 55, "ancien prix": 65, badge: "-15 %", img: "panier.jpg", imgDisponible: false, emoji: "🧺" },
-  { id: 12, nom: "Tablier en lin", catégorie: "Cadeaux", prix: 27, img: "tablier.jpg", imgDisponible: false, emoji: "🧑‍🍳" },
-  { id: 13, nom: "Sirop d'érable et noix de pécan", catégorie: "Repas", prix: 19, img: "sirop.jpg", imgDisponible: false, emoji: "🍯" }
+  { id: 11, nom: "Panier gourmand de l'hôte", catégorie: "Cadeaux", prix: 55, "ancien prix": 65, badge: "-15 %", img: "panier.jpg", imgDisponible: true, emoji: "🧺" },
+  { id: 12, nom: "Tablier en lin", catégorie: "Cadeaux", prix: 27, img: "tablier.jpg", imgDisponible: true, emoji: "🧑‍🍳" },
+  { id: 13, nom: "Sirop d'érable et noix de pécan", catégorie: "Repas", prix: 19, img: "sirop.jpg", imgDisponible: true, emoji: "🍯" }
 ];
 
 const BUNDLE_ID = "coffret-hote";
@@ -105,7 +105,8 @@ function renderProducts(category = "Tous") {
       badge.textContent = product.badge;
       visual.append(badge);
     }
-    addImageWithFallback(visual, product.imgDisponible ? product.img : null, product.nom, product.emoji, "product-image");
+    const imageClass = product.id === 13 ? "product-image product-image--contained" : "product-image";
+    addImageWithFallback(visual, product.imgDisponible ? product.img : null, product.nom, product.emoji, imageClass);
 
     const meta = document.createElement("div");
     meta.className = "product-meta";
